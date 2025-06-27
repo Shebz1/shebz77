@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shebz</title>
+
+  <!-- Подключаем иконки Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #000000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      justify-content: center;
+      scroll-behavior: smooth;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px #00000030;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 5px 0;
+    }
+
+    .contact {
+      margin-top: 20px;
+      background: rgb(255, 255, 255);
+      padding: 15px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #264a96; /* VK по умолчанию */
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      font-size: 18px;
+    }
+
+    .social-button i {
+      margin-right: 8px;
+    }
+
+    .social-button:hover {
+      background-color: #3b5b89;
+    }
+
+    .social-button.telegram {
+      background-color: #229ED9;
+    }
+
+    .social-button.telegram:hover {
+      background-color: #1d8cbf;
+    }
+    @media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .social-button {
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+}
+  </style>
+</head>
+<body>
+  <img src="avatar.jpg" alt="Мой аватар" class="avatar">
+
+  <h1>Мой первый сайт епта</h1>
+  <p>Иююююююю</p>
+
+  <!-- Кнопки соцсетей с иконками -->
+  <a href="https://vk.com/mr_stechkin77" class="social-button" target="_blank">
+    <i class="fab fa-vk"></i> Мой VK
+  </a>
+
+  <a href="https://t.me/Shebz1" class="social-button telegram" target="_blank">
+    <i class="fab fa-telegram"></i> Мой Telegram
+  </a>
+</body>
+</html>
